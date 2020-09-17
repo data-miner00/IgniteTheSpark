@@ -1,0 +1,157 @@
+
+@media screen and (max-width: 320px) {
+    .se-homecoming {
+        padding-top: 30vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo-img {
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .words {
+        font-size: 24px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .know-more {
+        opacity: .9;
+        padding: 13px 35px;
+    }
+
+    .know-more::before {
+        display: none;
+    }
+
+    .se-homecoming {
+        padding-top: 42vw;
+    }
+
+    .middle {
+        display: none;
+    }
+    
+    .photo-nav {
+        display: none;
+    }
+
+
+    .news-update {
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .sponsor {
+        padding: 30px;
+    }
+
+    .sponsor h1 {
+        margin-bottom: 20px;
+    }
+
+    .sponsors {
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .sponsors a {
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
+    #meteor,
+    #electron,
+    #laravel {
+        height: 35px;
+        filter: none;
+    }
+
+    .intro,
+    .organiser,
+    .date,
+    .time,
+    .participants,
+    .location,
+    .theme,
+    .attirex,
+    .pricing,
+    .corona,
+    .summary,
+    .contacts {
+        padding: 85px 6%;
+        text-align: center;   
+    }
+
+    .intro h1 span,
+    .organiser h1 span,
+    .date h1 span,
+    .time h1 span,
+    .participants h1 span,
+    .location h1 span,
+    .theme h1 span,
+    .attirex h1 span,
+    .pricing h1 span,
+    .corona h1 span,
+    .summary h1 span,
+    .contacts h1 span {
+        font-size: .85em;
+    }
+
+    .intro p,
+    .organiser p,
+    .date p,
+    .time p,
+    .participants p,
+    .location p,
+    .theme p,
+    .attirex p,
+    .pricing p,
+    .corona p,
+    .summary p,
+    .contacts p {
+        width: 285px;
+        line-height: 1.6em;
+        font-size: 17px;
+    }
+
+
+    .pricing table {
+        margin: 15px auto;
+        font-size: 17px;
+        min-width: 285px;
+        min-height: 300px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    .contacts ul {
+        font-size: 16px;
+        padding: 0 0 15px;
+    }
+
+    .join-us {
+        height: 100vh;
+        background-size: 600% 600%;
+        padding-top: 40%;
+    }
+
+    .join-us h1 {
+        font-size: 25px;
+    }
+
+    .join-us p {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .a,
+    .b,
+    .c,
+    .d,
+    .e {
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+/* 
+
+@media screen and (max-width: 480px) {
+    
+    
+    .photo-nav {
+        display: none;
+    }
+
+
+    .news-update {
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .sponsor {
+        padding: 30px;
+    }
+
+    .sponsor h1 {
+        margin-bottom: 20px;
+    }
+
+    .sponsors {
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .sponsors a {
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
+    #meteor,
+    #electron,
+    #laravel {
+        height: 35px;
+    }
+
+    .intro p,
+    .organiser p,
+    .date p,
+    .time p,
+    .participants p,
+    .location p,
+    .theme p,
+    .attirex p,
+    .pricing p,
+    .corona p,
+    .summary p,
+    .contacts p {
+        width: 430px;
+        line-height: 1.6em;
+        font-size: 17px;
+    }
+
+    .hidden-corona {
+        display: block;
+        color: lightgreen;
+    }
+
+    .pricing table {
+        margin: 15px auto;
+        font-size: 17px;
+        min-width: 400px;
+        min-height: 350px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+} */

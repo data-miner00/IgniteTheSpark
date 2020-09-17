@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan|Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+:root {
+    --padding-initial: 0 6%;
+
+    /* Gradient */
+    --gradient: linear-gradient(
+                    45deg,
+                    #845ec2,
+                    #d65db1,
+                    #ff6f91,
+                    #ff9671,
+                    #ffc75f,
+                    #f9f871
+                );
+    --gradient1: linear-gradient(
+                    90deg,
+                    #c33764,
+                    #1d2671
+                );
+    /* Fonts */
+    --trade-winds: 'Trade Winds';
+    --spartan: 'Spartan';
+    --montserrat: 'Montserrat', sans-serif;
+    --xiaowei: 'ZCOOL XiaoWei';
+    --comfortta: 'Comfortaa', cursive;
+    --poppins: 'Poppins', cursive;
+    --ssp: 'Source Sans Pro', sans-serif;
+    --ds: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+

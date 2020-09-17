@@ -1,0 +1,254 @@
+
+.intro,
+.organiser,
+.date,
+.time,
+.participants,
+.location,
+.theme,
+.attirex,
+.pricing,
+.corona,
+.summary,
+.contacts {
+    padding: 200px 6%;
+    text-align: center;   
+}
+
+.theme {
+    background-image: url('../images/retro1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.corona {
+    position: relative;
+}
+
+.intro h1 span,
+.organiser h1 span,
+.date h1 span,
+.time h1 span,
+.participants h1 span,
+.location h1 span,
+.theme h1 span,
+.attirex h1 span,
+.pricing h1 span,
+.corona h1 span,
+.summary h1 span,
+.contacts h1 span {
+    position: relative;
+    color: aquamarine;
+}
+
+.corona h1 span {
+    color: crimson;
+}
+
+.intro h1 span::before, 
+.organiser h1 span::before,
+.date h1 span::before,
+.time h1 span::before,
+.participants h1 span::before,
+.location h1 span::before,
+.theme h1 span::before,
+.attirex h1 span::before,
+.pricing h1 span::before,
+.corona h1 span::before,
+.summary h1 span::before,
+.contacts h1 span::before {
+    content: '';
+    position: absolute;
+    border: 0.5px solid white;
+    top: -10px;
+    left: 0;
+    right: 0;
+}
+
+.intro h1 span::after, 
+.organiser h1 span::after,
+.date h1 span::after,
+.time h1 span::after,
+.participants h1 span::after,
+.location h1 span::after,
+.theme h1 span::after,
+.attirex h1 span::after,
+.pricing h1 span::after,
+.corona h1 span::after,
+.summary h1 span::after,
+.contacts h1 span::after {
+    content: '';
+    position: absolute;
+    border: 0.5px solid white;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
+.intro p,
+.organiser p,
+.date p,
+.time p,
+.participants p,
+.location p,
+.theme p,
+.attirex p,
+.pricing p,
+.corona p,
+.summary p,
+.contacts p {
+    padding: 30px 0 50px;
+    width: 700px;
+    text-align: left;
+    line-height: 1.85em;
+    font: 25px var(--ssp);
+    text-indent: 2em;
+    margin: 0 auto;
+}
+
+.theme p {
+    text-shadow: 2px 2px 5px #1e1e1e;
+    color: white;
+}
+
+.hidden-corona {
+    display: none;
+}
+
+strong {
+    color: aquamarine;
+}
+
+.organiser,
+.time,
+.pricing,
+.summary {
+    background-color: #383737;
+}
+
+.news-update {
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    border-radius: 250px;
+    background-color: white;
+    top: 50%;
+    left: -160px;
+    transition: transform 0.4s;
+    overflow: hidden;
+}
+
+.news-update img {
+    height: 60px;
+}
+
+.news-update:hover {
+    transform: translateX(120px);
+}
+
+.corona p span {
+    color: aqua;
+}
+
+.participants {
+    background-color: #1e1e1e;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, #383737 35px, #383737 70px);
+}
+
+.contacts ul {
+    list-style-type: none;
+    font: 24px var(--ssp);
+    padding: 0 0 15px;
+}
+
+.contacts ul li {
+    padding: 15px 0;
+    position: relative;
+}
+
+.contacts ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.contacts ul li:hover::before {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.contacts ul li:nth-child(1):hover {
+    color: pink !important;
+}
+
+.contacts ul li:nth-child(2):hover {
+    color: paleturquoise !important;
+}
+
+
+/* Pricing Table
+=========================================== */
+
+.pricing table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    font-size: 25px;
+    min-width: 450px;
+    min-height: 475px;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.pricing table thead tr {
+    background-color: #009879;
+    color: white;
+    
+    font-weight: bold;
+}
+
+.pricing table th,
+.pricing table td {
+    padding: 12px 15px;
+}
+
+.pricing table tbody tr.active-row {
+    font-weight: bold;
+    color: #0ea2dd;
+}
+
+.pricing table tbody tr:last-of-type {
+    border-bottom: 10px solid #009879;
+}
+
+
+/* Chevron animation
+=========================================== */
+
+.chevron {
+    display: block;
+    padding: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    animation: pulse 1s infinite linear;
+    animation-direction: alternate;
+    transition: color 0.1s linear;
+}
+
+.chevron:hover {
+    color: #ff4081;
+}
+
+@keyframes pulse {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}

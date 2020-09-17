@@ -1,0 +1,278 @@
+
+/* The four photos
+=========================================== */
+.photo-nav {
+    padding: 40px 0;
+    background-color: #1e1e1e;
+}
+
+.p-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 45%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    transition: filter 0.4s;
+    font-family: var(--poppins);
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #1e1e1e;
+    border: 1px solid white;
+    box-shadow: 0 0 15px black;
+}
+
+.item:hover {
+    filter: grayscale(80%);
+}
+
+.item > h1 {
+    display: block;
+    margin: auto;
+}
+
+.row1 {
+    margin-bottom: 30px;
+}
+
+.countdown {
+    background-image: url('../images/13531.jpg');
+}
+
+.attire {
+    background-image: url('../images/scap.png');
+}
+
+.place {
+    background-image: url('../images/167354432.jpg');
+}
+
+.joiner {
+    background-image: url('../images/3452672.jpg');;
+}
+
+/* Colorful join us section
+=========================================== */
+.join-us {
+    height: 430px;
+    padding: 80px 0 0;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 20s ease-in-out infinite;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* Colorful: Define Circles
+=========================================== */
+.circle {
+    border-radius: 50%;
+    
+    border: 3px solid white;
+    position: absolute;
+    
+    animation-direction: alternate-reverse;
+    opacity: 0.25;
+}
+
+.circle-fill {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border-radius: 50%;
+    animation-direction: alternate;
+    background-color: white;
+    opacity: 0.1;
+}
+
+/* Colorful: Instantiate circles
+=========================================== */
+.a {
+    height: 400px;
+    width: 400px;
+    top: 30px;
+    left: 30px;
+    animation: kHfijak 8s infinite ease-in-out;
+}
+
+.b {
+    height: 250px;
+    width: 250px;
+    top: -65px;
+    right: 130px;
+    animation: kHfijak 12s infinite ease-in-out;
+}
+
+.c {
+    bottom: 20px;
+    right: -20px;
+    height: 300px;
+    width: 300px;
+    
+    animation: alternate-reverse adijFHUa 13s infinite ease-in;
+}
+
+.d {
+    
+    top: 10px;
+    left: 300px;
+    animation: adijFHUa 9s infinite ease-in-out;
+}
+
+.e {
+    bottom: 10px;
+    right: 400px;
+    animation: adijFHUa 9s infinite ease-in-out;
+}
+
+/* Colorful: Animation for circlews
+=========================================== */
+@keyframes kHfijak {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    50% {
+        transform: translate3d(-10%, -10%, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes adijFHUa {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(10%, 10%, 0);
+    }
+    70% {
+        transform: translate3d(10%, 25%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Colorful: Contents
+=========================================== */
+.join-us h1 {
+    text-shadow: 2px 2px 5px #1e1e1e;
+    font: 45px var(--poppins);
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.join-us p {
+    width: 50%;
+    margin: 30px auto;
+    font: 18px var(--comfortta);
+    line-height: 1.5;
+    text-shadow: 1.6px 1.6px #1e1e1e;
+    z-index: 1;
+}
+
+.join-us a {
+    padding: 15px 38px;
+    background-color: burlywood;
+    font: 20px var(--comfortta);
+    margin: 10px auto;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: background-color 1s ease;
+}
+
+.join-us a:hover {
+    background-color: cornflowerblue;
+}
+
+/* Sponsors
+=========================================== */
+.sponsor {
+    color: #a5a5a5;
+    background-color: #f6f6f6;
+    text-align: center;
+    font: 16px monospace;
+    padding: 50px;
+}
+
+.sponsor h1 {
+    margin-bottom: 50px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsors a {
+    display: block;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#meteor,
+#electron,
+#laravel {
+    height: 50px;
+}
+
+.sponsors a img {
+    filter: grayscale(80%);
+    transition: filter 0.2s ease;
+}
+
+.sponsors a img:hover {
+    filter: none;
+}
+
+/* Social medias
+=========================================== */
+.socialm {
+    padding: 5px 0;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+    linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+/* Footer
+=========================================== */
+footer {
+    height: 100px;
+    background-color: #111111;
+    padding: var(--padding-initial);
+    font: 15px var(--poppins);
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+}
+
+footer p span {
+    cursor: default;
+}
+
